@@ -1,3 +1,6 @@
+#![allow(unused)]
+use chrono::{Local, TimeZone};
+use chrono_tz::Tz;
 use dt::matcher;
 
 #[test]
@@ -15,12 +18,16 @@ fn get_date_now() {
 
 #[test]
 fn get_now_tz_abr() {
-    let date = dt::now_from_tz_abbrev("WIB");
+    // let tz: Tz = "Asia/Jakarta".parse().unwrap();
+    // let date = dt::now_in_tz("WIB");
+    // assert_eq!(
+    //     Local::now().with_timezone(&tz).to_rfc3339(),
+    //     date.to_rfc3339()
+    // );
+    let date = dt::now_in_tz("IST");
     println!("{:?}", date);
-    let date = dt::now_from_tz_abbrev("IST");
+    let date = dt::now_in_tz("SGT");
     println!("{:?}", date);
-    let date = dt::now_from_tz_abbrev("SGT");
-    println!("{:?}", date);
-    let date = dt::now_from_tz_abbrev("PST");
+    let date = dt::now_in_tz("PST");
     println!("{:?}", date);
 }
