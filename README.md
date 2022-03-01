@@ -1,7 +1,7 @@
-Introduction:
+### Introduction:
 A rust learning project to scartch an itch.  It can transform a "YYYY-MM-DD HH:MM:SS" between timezones
 
-Options:
+### Options:
 ```bash
 dt 0.1.0
 Transform dates to different timezones using timezone abbreviations
@@ -17,8 +17,8 @@ OPTIONS:
     -V, --version        Print version information
 ```
 
-Next Up
-[] Make it more CLI like
-[] Parse  naive date and naive time 
-[] Add some parsing tests
-[] Set some env variable based defaults
+### Next Up
+- [] Make it more CLI like
+- [] Parse  naive date and naive time 
+- [] Add some parsing tests
+- [] Set some env variable based defaults
