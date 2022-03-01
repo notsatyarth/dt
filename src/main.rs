@@ -10,11 +10,11 @@ struct Cli {
     /// The time string to parse
     #[clap(short, long, default_value = "now")]
     date: String,
-    /// The timezone to convert to
+    /// The timezone abbreviation to convert to
     #[clap(short, long, default_value = "local")]
     to: String,
 
-    /// The timezone to convert from
+    /// The timezone abbreviation to convert from
     #[clap(short, long, default_value = "local")]
     from: String,
 }

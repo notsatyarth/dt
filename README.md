@@ -11,9 +11,9 @@ USAGE:
 
 OPTIONS:
     -d, --date <DATE>    The time string to parse [default: now]
-    -f, --from <FROM>    The timezone to convert from [default: local]
+    -f, --from <FROM>    The timezone abbreviation  to convert from [default: local]
     -h, --help           Print help information
-    -t, --to <TO>        The timezone to convert to [default: local]
+    -t, --to <TO>        The timezone abbreviation  plto convert to [default: local]
     -V, --version        Print version information
 ```
 
