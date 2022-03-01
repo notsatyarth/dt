@@ -1,5 +1,5 @@
 ### Introduction:
-A rust learning project to scartch an itch.  It can transform a "YYYY-MM-DD HH:MM:SS" between timezones
+A rust learning project to scratch an itch.  It can transform a "YYYY-MM-DD HH:MM:SS" between timezones
 
 ### Options:
 ```bash
