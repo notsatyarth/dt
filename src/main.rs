@@ -21,7 +21,7 @@ struct Cli {
 
 fn main() {
     let args = Cli::parse();
-    let mut output: Option<DateTime<FixedOffset>> = None;
+    let output: Option<DateTime<FixedOffset>>;
     if args.date == "now" {
         if args.to == "local" {
             output = Some(dt::now());
@@ -41,10 +41,10 @@ fn main() {
 }
 
 fn handle_timestamp(date_str: &str, from_tz_str: &str, to_tz_str: &str) -> DateTime<FixedOffset> {
-    let date = NaiveDateTime::parse_from_str(&date_str, "%Y-%m-%d %H:%M:%S")
+    let date = NaiveDateTime::parse_from_str(date_str, "%Y-%m-%d %H:%M:%S")
         .expect("Incorrect format , use %Y-%m-%d %H:%M:%S");
     let from_tz = dt::get_offset_from_tz_str(from_tz_str).expect("Invalid from timezone");
     let to_tz = dt::get_offset_from_tz_str(to_tz_str).expect("Invalid to timezone");
     let date_in_local = from_tz.from_local_datetime(&date).unwrap();
-    return date_in_local.with_timezone(&to_tz);
+    date_in_local.with_timezone(&to_tz)
 }
