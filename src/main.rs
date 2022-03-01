@@ -3,7 +3,7 @@ use chrono::NaiveDateTime;
 use chrono::{format::StrftimeItems, DateTime, FixedOffset, Offset, TimeZone};
 use clap::Parser;
 
-/// Search for a pattern in a file and display the lines that contain it.
+/// Transform dates to different timezones using timezone abbreviations
 #[derive(Parser)]
 #[clap(author,version,about,long_about=None)]
 struct Cli {
