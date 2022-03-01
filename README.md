@@ -18,7 +18,7 @@ OPTIONS:
 ```
 
 ### Next Up
-- [] Make it more CLI like
-- [] Parse  naive date and naive time 
-- [] Add some parsing tests
-- [] Set some env variable based defaults
+- [ ] Make it more CLI like
+- [ ] Parse  naive date and naive time 
+- [ ] Add some parsing tests
+- [ ] Set some env variable based defaults
