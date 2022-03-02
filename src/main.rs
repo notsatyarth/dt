@@ -42,7 +42,7 @@ fn main() {
 
 fn handle_timestamp(date_str: &str, from_tz_str: &str, to_tz_str: &str) -> DateTime<FixedOffset> {
     let date = NaiveDateTime::parse_from_str(date_str, "%Y-%m-%d %H:%M:%S")
-        .expect("Incorrect format , use %Y-%m-%d %H:%M:%S");
+        .expect("Incorrect format , use YY-MM-DD HH:MM:SS");
     let from_tz = dt::get_offset_from_tz_str(from_tz_str).expect("Invalid from timezone");
     let to_tz = dt::get_offset_from_tz_str(to_tz_str).expect("Invalid to timezone");
     let date_in_local = from_tz.from_local_datetime(&date).unwrap();
