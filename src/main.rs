@@ -33,7 +33,7 @@ fn main() {
     }
     match output {
         Some(time) => println!(
-            "{:?}",
+            "{}",
             time.to_rfc3339_opts(chrono::SecondsFormat::Millis, false)
         ),
         None => println!("Nothing"),
